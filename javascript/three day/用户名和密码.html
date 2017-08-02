@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	// 输入用户名和密码，如果正确，提示正确，如果不对，一直输入：while
+	var user = prompt("请输入用户名");
+	var password = prompt("请输入密码");
+	while(user!="admin"||password!="123456"){
+		alert("用户名或者密码有误");
+		user = prompt("请输入用户名");
+		password = prompt("请输入密码");
+	}
+	alert("登录成功");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

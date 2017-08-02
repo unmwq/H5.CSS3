@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>29 背景综合练习</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		ul {list-style: none;}
+		.nav a, .nav a:visited {
+			color: #fff;
+			text-decoration: none;
+		}
+		.nav {
+			/*letter-spacing: -3px;*/
+			word-spacing: -4px;
+		}
+		/*使用inline-block的方式实现菜单导航*/
+		.nav-item {
+			display: inline-block;  /*ie6和ie7都不支持inline-block*/
+			*display: inline;   /*  *只有ie6和ie7能识别css设置*/
+			zoom: 1;
+			width: 120px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background: url(img/bg.png) no-repeat;
+		}
+		.nav-item:hover {
+			background: url(img/bgc.png) no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li class="nav-item"><a href="#" class="nav-link">主页首页</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">主页首页</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">主页首页</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">主页首页</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">主页首页</a></li>
+		<li class="nav-item"><a href="#" class="nav-link">主页首页</a></li>
+	</ul>
+</body>
+</html>

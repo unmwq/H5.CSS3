@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>成绩</title>
+	<script type="text/javascript">
+		// 得到五个同学的平均成绩，
+		// 如果大于等于90为优秀，
+		// 小于90大于等于80为良好，
+		// 小于80大于等于70为一般，
+		// 小于70大于等于60为较差，
+		// 小于60为很差
+		var num1 = prompt("请输入成绩1");
+		var num2 = prompt("请输入成绩2");
+		var num3 = prompt("请输入成绩3");
+		var num4 = prompt("请输入成绩4");
+		var num5 = prompt("请输入成绩5");
+		var average = (+num1 + +num2 + +num3 + +num4 + +num5)/5;
+		var a = Math.floor(average/10);
+		console.log(a);
+		switch(a){
+			case 9: 
+				console.log("优秀");
+				break;
+			case 8:
+				console.log("良好");
+				break;
+			case 7:
+				console.log("一般");
+				break;
+			case 6:
+				console.log("较差");
+				break;
+			default: 
+				console.log("很差");
+				break;
+
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

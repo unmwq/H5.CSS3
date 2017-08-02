@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10属性选择器</title>
+	<style>
+		h1[id] { color: red; }
+		/*把拥有id和class属性的h1标题选出来然后设置字体大小为17px*/
+		h1[id][class] { font-size: 17px; }
+		input[type="text"] { background-color: purple; }
+
+	</style>
+</head>
+<body>
+	<h1>中国足球出现了？？？</h1>
+	<h1 id="side-title" class="side-msg">中国足球没出现！！！</h1>
+	<input type="text">
+	<input type="password">
+</body>
+</html>

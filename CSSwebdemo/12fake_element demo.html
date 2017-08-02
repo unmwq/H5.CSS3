@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>伪元素</title>
+	<style>
+	/*第一行显示红色*/
+		.article-txt:first-line {
+			color: red;
+		}
+		.article-txt:first-letter {
+			font-size: 50px;
+		}
+		/*第一个孩子是span标签的元素*/
+		span:first-child {
+			 color: green;
+			 font-size: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<p class="article-txt">将foreground对应的#10AD38修改为你需要的颜色就可以了，例如#10AD38
+其他需要自定义的慢慢查看即可，例如数字、字符串、函数、变量样式等等
+你可以在原有主题的基础上作修改，或者复制某个主题文件修改后作为自己新定义的主题，在preferences => Color Scheme菜单下即可启用</p>
+	<div>
+		<span>12</span>
+		<span>23</span>
+		<span>34</span>
+	</div>
+	<div>
+		<span>第一个</span>
+		<span>第二个</span>
+		<span>第三个</span>
+	</div>
+</body>
+</html>

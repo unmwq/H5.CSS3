@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	/*
+	//求13的阶乘  1×2×3×4.....*13
+	var sum = 1;
+	for (var i = 1; i <= 13 ; i++) {
+		sum *= i;
+	}
+	alert("13的阶乘："+sum);
+*/
+
+/*
+	// 得到100到999的水仙花数
+	// 百位上的立方+十位上的立方+个位上的立方=自己
+	var a = 0;
+	for (var i = 100; i <= 999; i++) {
+		var bai = Math.floor(i/100); 
+		var shi = Math.floor(i%100/10);
+		var ge =i%10;
+		var sum = Math.pow(bai,3)+ Math.pow(shi,3)+ Math.pow(ge,3);
+		if (sum==i) {
+			console.log("水仙数是："+ sum);
+			a++;
+		}
+	}
+	console.log(a);
+*/
+	// 求100以内的质数 概念：除了1和它自身外，不能被其他自然数整除的数叫做质数
+	var num=0;
+	for(var n=1;n<100;n++){
+
+		for(var m=2;m<=n-1;m++){
+			if (n%m==0) {
+				break;
+			}
+		}
+		if (n==m) {
+			num++;
+			console.log("这是个质数："+m);
+
+		}
+
+	}
+	console.log(num);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

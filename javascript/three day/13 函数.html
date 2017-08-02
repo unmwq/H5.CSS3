@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//如果在页面上经常要输出一段代码，每次输出都要写一遍,太麻烦了，我们可以考虑将这些代码封装起来，封装到一个函数中。
+		/*
+		function gaobai(argument) {
+			// body...
+			console.log("我爱你");
+			console.log("爱着你");
+			console.log("就像老鼠爱大米");
+		}
+		gaobai();
+		*/
+		// 计算两个数的和shu1，shu2，可以将这个数封装在一个函数中。
+		/*
+		function jisuan(shu1,shu2) {
+			// body...
+			alert(shu1+shu2);
+		}
+		var yi = 12;
+		var er = 13;
+		jisuan(yi,er);
+		*/
+		function jisuan (shu1,shu2){
+			var he = shu1 + shu2;
+			return he; 		//如果函数没有return，那么这个函数默认返回undefined，
+		}
+		var he = jisuan(12,13);
+		console.log(he);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		.header, .aside, .main, .footer {
+			/*border-right: 1px solid yellow; */
+			/*br+ + tab 快捷键 快速生成。*/
+			border: 1px solid yellow; /* bd+ + tab   */
+			background-color: silver;
+			margin-bottom: 10px;
+			height: 200px;
+		}
+		.aside {
+			height: 300px;
+			float: left;
+			width: 200px;
+		}
+		.main {
+			float: left;
+			/*margin-left: 202px;*/
+			width: 980px;
+		}
+		.wrap_clearfix {
+			display: table; /*触发bfc，div具有了包裹性*/
+		}
+		.wrap_clearfix:before, .wrap_clearfix:after {
+			content: "";
+			display: block;
+			clear: both;
+			height: 0;
+		}
+		.wrap_clearfix {
+			_zoom:1;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		header
+	</div>
+	<div class="wrap_clearfix">
+		<div class="aside">
+			aside
+		</div>
+		<div class="main">
+			main
+		</div>
+	</div>
+	<div class="footer">
+		footer
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行高</title>
+	<style>
+	/** { }指所有标签样式。*/
+		* {
+			padding: 0; margin: 0;
+		}
+		p.demo {
+			height: 100px;
+			line-height: 100px;
+			text-align: center;
+			background-color: silver;
+			font-size: 40px;
+		}
+		.wrap {
+			font:16px "黑体";
+			background-color: green;
+		}
+		.wrap p {
+			background-color: red;
+			/*font: 20px/1.5em "宋体"; *//*此时行高是30px  20*1.5；*/
+			/*font: 20px/1.5 "宋体";*/
+			font: 20px/40px "宋体";
+		}
+
+	</style>
+</head>
+<body>
+	<p class="demo">
+		时间东花市街道还是觉得很
+	</p>
+	<div class="wrap">
+		<div>我是父div的文本</div>
+		<p>
+			我是子段落的文本
+		</p>
+		我是父div的文本
+	</div>
+</body>
+</html>

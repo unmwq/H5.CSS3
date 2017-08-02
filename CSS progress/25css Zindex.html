@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.wrap {
+			background-color: silver;
+			height: 400px;
+			width: 400px;
+			position: relative;
+			border: 1px solid #000;
+		}
+		.box1, .box2, .box3 {
+			border: 1px solid teal;
+			height: 100px;
+			width: 100px;
+			background-color: yellowgreen;
+			position: absolute;
+		}
+		.box1 {
+			top: 0;
+			left: 0;
+			z-index: 4; /*Z-index 是按照数字从小到大的属性来进行排列显示的！*/
+		}
+		.box2 {
+			background-color: yellow;
+			top: 30px;
+			left: 30px;
+			z-index: 2;
+		}
+		.box3 {
+			background-color: red;
+			top: 60px;
+			left: 50px;
+			z-index: 3;
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="box1">
+			1
+		</div>
+		<div class="box2">
+			2
+		</div>
+		<div class="box3">
+			3
+		</div>
+	</div>
+</body>
+</html>

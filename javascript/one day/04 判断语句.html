@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var date = new Date();
+        var week = date.getDay();
+        if (week === 0) {
+            console.log("星期日");
+        }else if (week ===1) {
+            console.log("星期一");
+        }else if (week === 2) {
+            console.log("星期二");
+        }else if (week === 3) {
+            console.log("星期三");
+        }else if (week === 4) {
+            console.log("星期四");
+        }else if (week === 5) {
+            console.log("星期五");
+        }else if (week === 6) {
+            console.log("星期六");
+        }
+//        switch 判断相等的时候用的是全等 ===
+//        var a = "10"; // 最终输出hhha
+        var a = 10;
+        switch(a) {
+            case 10:
+                console.log(a);
+            case 20:
+                console.log(a);
+            case 30:
+                console.log(a);
+            default:
+                console.log("hhha");
+                break;
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

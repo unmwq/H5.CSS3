@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type = "text/javascript">
+		//接收输入的内容
+		// var a = prompt("请输入一段内容");
+		//判断数据的类型：typeof
+		// console.log(typeof a);
+
+		/*
+		var a = prompt("请输入一个数字")
+
+		a = Number(a);
+		a+=1;
+		alert("你输出的数字是："+a);
+		*/
+
+		// var a = 123;
+		// a = String(a);
+		// console.log(a);
+		// console.log(typeof a);
+	//false、0、“”、NAN、Undefined在转换的时候会转成false以外。其他的都会转成true
+	alert("Boolean转换");
+	var a = "false";		//true
+	var a = false;			//false
+	a = Boolean(a);
+	console.log(a);
+	console.log(typeof a);
+	
+	//使用%进行隐式转换
+	alert("使用%进行隐式转换");
+	var a = "123";
+	a = a % 12;		//3
+	console.log(a);
+	console.log(typeof a);
+
+	//隐式转换成boolean
+	alert("隐式转换成Boolean");
+	var a = 123;
+	a = !!a;
+	console.log(a);
+	console.log(typeof a);
+		
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

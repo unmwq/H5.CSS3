@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>13伪元素before和after</title>
+	<style>
+		.wrap:before, .wrap:after { 
+			content: "----------";
+			display: block; /*这是让当前伪元素 转换成块级元素*/
+		 }
+	</style>
+</head>
+<body>
+	<div>
+		<hr>
+	</div>
+	<div class="wrap">
+		我是div
+	</div>
+	<div>
+		<hr>
+	</div>
+</body>
+</html>

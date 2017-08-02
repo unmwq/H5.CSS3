@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01书写CSS的案例</title>
+	<!-- 内嵌css样式 -->
+	<style type ="text/css">
+	/*将某一个css文件的样式直接导入到当前的位置*/
+	/*导入样式必须写在所有的其他样式设置之前*/
+	@import url(CSS/main.css);
+		p { 
+			color: green; /*设置前景色，也就是字体的颜色*/
+			background-color: silver;
+		}
+		ul {
+			background-color: red;
+		}
+	</style>
+	<!-- 外联css样式、外部css样式 -->
+	<!-- <link rel="stylesheet" href="CSS/main.css"> -->
+</head>
+<body>
+	<!-- id、name、style 所有标签都有的属性 -->
+	<h1 style="color: red; font-size: 12px;">是的是的是渡水复渡水</h1>
+	<p>这是一个段落</p>
+	<!-- ul>(li>a[href="#"])*3 -->
+	<ul>
+		<li><a href="#">北京</a></li>
+		<li><a href="#">上海</a></li>
+		<li><a href="#">武汉</a></li>
+	</ul>
+</body>
+</html>

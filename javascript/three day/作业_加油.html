@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>加油</title>
+	<script type="text/javascript">
+// 一个加油站为了鼓励车主多加油，所以加的多有优惠。
+// 92号汽油，每升6元；如果大于等于20升，那么每升5.9；
+// 97号汽油，每升7元；如果大于等于30升，那么每升6.95
+// 编写JS程序，用户输入自己的汽油编号，然后输入自己加多少升，弹出价格。
+		var oil = prompt("请输入油号");
+		var num = prompt("请输入加入多少升");
+		var c;
+		if (oil=="92") {
+			if (num>=20) {
+				alert("一升汽油5.9块");
+				c = num*5.9;
+				console.log(c);
+			}
+			else{
+				alert("一升汽油6块");
+				c = num*6;
+				console.log(c);
+			}
+		}
+		else if (oil=="97") {
+			if (num>=30) {
+				alert("一升汽油6.95块");
+				c = num*6.95;
+				console.log(c);
+			}
+			else{
+				alert("一升汽油7块");
+				c = num*7;
+				console.log(c);				
+			}
+		}
+		/*while (Oil=="92") {
+		if (num>=20) {
+			alert("一升汽油5.9块");
+			c = num*5.9;
+			console.log(c);
+		}
+		else{
+			alert("一升汽油6块");
+			c = +num*5.9;
+			console.log(c);			
+		}
+		}
+		*/
+		
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

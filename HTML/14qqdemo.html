@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>qq 表单 demo</title>
+</head>
+<body>
+	<h1>注册帐号</h1>
+	<hr>
+	<!-- hr 横线 -->
+	<form action="#">
+		<table>
+				<tr>
+					<td> 昵称 </td> <td><input type="text"></td>
+				</tr>
+				<tr>
+					<td>密码 </td> <td><input type="password"></td>
+				</tr>	 
+				<tr>
+					<td>确认密码 </td> <td><input type="password"></td>
+				</tr>
+				<tr>
+					<td>性别</td> 
+					<td>
+						<input type="radio" name="gender" checked="" id="gender-man"> 
+						<label for="gender-man"> 男 </label> &nbsp;&nbsp;
+					    <label ><input type="radio" name="gender">女</label>
+						<!-- lable标签 -->
+					 </td>
+				</tr>
+				<tr>
+					<td>生日</td> 
+					<td>
+					 	<select name="" id="">
+					 		<option value="">公历</option>
+					 		<option value="">农历</option>
+					 	</select>
+					 	<!-- 快捷键 ：option{200$年}*15-->
+					 	<select name="" id="">
+					 		<option value="">1990</option>
+					 		<option value="">1991</option>
+					 		<option value="">1992</option>
+					 		<option value="">1993</option>
+					 		<option value="">1994</option>
+					 		<option value="">1995</option>
+					 		<option value="">1996</option>
+					 		<option value="">1997</option>
+					 		<option value="">1998</option>
+					 	</select>
+					 	<!-- 月 -->
+					 	<select name="" id="">
+					 		<option value="">1月</option>
+					 		<option value="">2月</option>
+					 		<option value="">3月</option>
+					 		<option value="">4月</option>
+					 		<option value="">5月</option>
+					 		<option value="">6月</option>
+					 		<option value="">7月</option>
+					 		<option value="">8月</option>
+					 		<option value="">9月</option>
+					 		<option value="">10月</option>
+					 		<option value="">11月</option>
+					 		<option value="">12月</option>
+					 	</select>
+					 	<!-- 日 -->
+					 	<select name="" id="">
+					 		<option value="">1</option>
+					 		<option value="">2</option>
+					 		<option value="">3</option>
+					 		<option value="">4</option>
+					 		<option value="">5</option>
+					 		<option value="">6</option>
+					 		<option value="">7</option>
+					 		<option value="">8</option>
+					 		<option value="">9</option>
+					 		<option value="">10</option>
+					 		<option value="">11</option>
+					 		<option value="">12</option>
+					 		<option value="">13</option>
+					 		<option value="">14</option>
+					 		<option value="">15</option>
+					 		<option value="">16</option>
+					 		<option value="">17</option>
+					 		<option value="">18</option>
+					 		<option value="">19</option>
+					 		<option value="">20</option>
+					 		<option value="">21</option>
+					 		<option value="">22</option>
+					 		<option value="">23</option>
+					 		<option value="">24</option>
+					 		<option value="">25</option>
+					 		<option value="">26</option>
+					 		<option value="">27</option>
+					 		<option value="">28</option>
+					 		<option value="">29</option>
+					 		<option value="">30</option>
+					 		<option value="">31</option>
+					 	</select>
+
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox"> 同时开通QQ空间
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="注册帐号">
+					</td>
+				</tr>
+			</thead>
+		</table>
+	</form>
+<!-- fieldest :将表单内容的一部分打包，生成一组相关表单的字段。
+	legend ：为fieldset元素定义标题 -->
+	<form action="#">
+		<fieldset>
+			<legend>group1</legend>
+			user2: <input type="text">
+			<br>
+			password: <input type="text">
+		</fieldset>
+		<fieldset>
+			<legend>group2</legend>
+			user2: <input type="text">
+			<br>
+			password: <input type="text">
+			<input type="reset">
+		</fieldset>
+	</form>
+	</body>
+</html>
